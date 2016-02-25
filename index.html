@@ -3,11 +3,12 @@
 
 <head>
     <title>JS Intro</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 
 <body>
-    <h1>Hello JavaScript!</h1>
+    <h1 id="id-1">Hello JavaScript!</h1>
     <button onclick="checkAge()">Verify my Age</button>
     <!-- Calling the function -->
     <button onclick="checkGrade()">Check my Grade</button>
@@ -16,14 +17,17 @@
     <button onclick="printStaff()">Print Staff</button><br>
     <button onclick="addDavidToStaff()">Add David</button>
     <h1>My Calculator</h1>
-    <input type="number" placeholder="number 1">
-    <input type="number" placeholder="number 2">
+    <input type="number" placeholder="number 1" id="op1">
+    <input type="number" placeholder="number 2" id="op2">
     <p></p>
-    <button>Add</button>
-    <button>Subtract</button>
-    <button>Multiply</button>
-    <button>Divide</button>
-
+    <button onclick="calculate('add')">Add</button>
+    <button onclick="calculate('subtract')">Subtract</button>
+    <button onclick="calculate('multipy')">Multiply</button>
+    <button onclick="calculate('dviide')">Divide</button>
+    
+    <p></p>
+    <h1>Paragraphs</h1>
+    <button onclick="addParagraph()">Add Paragraph</button>
 </body>
 
 </html>
