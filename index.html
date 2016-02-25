@@ -1,19 +1,29 @@
 <!doctype HTML>
 <html>
-    <head>
-        <title>JS Intro</title>
-        <script>
-            var age = prompt('What is your age?') /* the prompt remembers the var age */
-            console.log ('Hello, you are ' + age);
-            if (age < 21) {
-                alert('You are under 21!');
-            } else {
-                alert('You are over 21!');
-            }
-            
-        </script>
-    </head>
-    <body>
-        <h1>Hello JavaScript!</h1>
-    </body>
+
+<head>
+    <title>JS Intro</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Hello JavaScript!</h1>
+    <button onclick="checkAge()">Verify my Age</button>
+    <!-- Calling the function -->
+    <button onclick="checkGrade()">Check my Grade</button>
+    <p></p>
+    <h1>Staff Directory</h1><br>
+    <button onclick="printStaff()">Print Staff</button><br>
+    <button onclick="addDavidToStaff()">Add David</button>
+    <h1>My Calculator</h1>
+    <input type="number" placeholder="number 1">
+    <input type="number" placeholder="number 2">
+    <p></p>
+    <button>Add</button>
+    <button>Subtract</button>
+    <button>Multiply</button>
+    <button>Divide</button>
+
+</body>
+
 </html>
